@@ -105,7 +105,7 @@ def rabota(url, city=None, language=None):
 
 
 if __name__ == '__main__':
-    url = 'https://kaliningrad.rabota.ru/?query=python&sort=relevance'
+    url = 'https://www.rabota.ru/?query=python&sort=relevance'
     jobs, errors = rabota(url)
     h = codecs.open('work.txt', 'w', 'utf-8')
     h.write(str(jobs))
